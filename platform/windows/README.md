@@ -6,6 +6,9 @@
 This is the platform-specific project for the platform Windows.  
 Make sure to check the shared crate as we depend on it.
 
+To get any logging outputs run this with the environment variable `RUST_LOG` set to `INFO` or `DEBUG`.
+Alternatively, running this in debug mode _should_ automatically log everything in `DEBUG` mode.
+
 ## How does this work?
 
 Rust is a cross-platform language that supports many different architectures and platforms.  

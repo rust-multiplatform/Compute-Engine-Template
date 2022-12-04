@@ -1,4 +1,4 @@
-# Rust Multi-Platform Base Project Template
+# Rust Multi-Platform: Compute Project Template
 
 > ⚠️ THIS IS A TEMPLATE. ⚠️
 
@@ -10,6 +10,9 @@ This project is supported by the following platforms:
 - ✅ Platform: Android
 - ✅ Platform: iOS
 - ✅ Platform: WebAssembly (⚠️ Only the WASM & JS side, still needs a web-server or bundler and HTML/CSS part)
+
+To get any logging outputs run this with the environment variable `RUST_LOG` set to `INFO` or `DEBUG`.
+Alternatively, running this in debug mode _should_ automatically log everything in `DEBUG` mode.
 
 To use this project simply fork it (button in top right corner) into your own namespace.
 If you need some more advanced setup check out the [forking guide](FORKING.md).
