@@ -22,8 +22,8 @@ base_engine = { git = "https://github.com/rust-multiplatform/Base-Engine-Library
 # WINDOWS: There may be an issue with "Long Paths".
 # Comment the Git dependency and uncomment the local dependency,
 # and clone the repository manually outside the project directory.
-# compute_engine = { git = "https://github.com/rust-multiplatform/Compute-Engine-Library", branch = "main" }
-compute_engine = { path = "../../Compute-Engine-Library" }
+compute_engine = { git = "https://github.com/rust-multiplatform/Compute-Engine-Library", branch = "main" }
+# compute_engine = { path = "../../Compute-Engine-Library" }
 
 log = "0.4.14"
 env_logger = "0.10.0"
