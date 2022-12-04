@@ -3,7 +3,7 @@ name = "shared"
 version = "0.1.0"
 edition = "2021"
 license = "MIT OR Apache-2.0"
-repository = "https://github.com/rust-multiplatform/Base-Project-Template.git"
+repository = "https://github.com/rust-multiplatform/Compute-Engine-Template.git"
 
 [features]
 default = ["all-tests"]
@@ -14,3 +14,16 @@ all-tests = ["ui-tests"]
 crate-type = ["cdylib", "staticlib", "rlib"]
 
 [dependencies]
+# The base engine.
+# May or may not be needed as a direct dependency.
+base_engine = { git = "https://github.com/rust-multiplatform/Base-Engine-Library", branch = "main" }
+# The compute engine.
+# Based on the base engine.
+# WINDOWS: There may be an issue with "Long Paths".
+# Comment the Git dependency and uncomment the local dependency,
+# and clone the repository manually outside the project directory.
+# compute_engine = { git = "https://github.com/rust-multiplatform/Compute-Engine-Library", branch = "main" }
+compute_engine = { path = "../../Compute-Engine-Library" }
+
+log = "0.4.14"
+env_logger = "0.10.0"
