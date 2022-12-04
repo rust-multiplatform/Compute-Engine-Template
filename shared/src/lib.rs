@@ -1,7 +1,6 @@
 #![allow(clippy::all)]
 
-use base_engine::BaseEngine;
-use compute_engine::ComputeEngine;
+use compute_engine::{BaseEngine, ComputeEngine};
 
 #[cfg(test)]
 mod tests;
