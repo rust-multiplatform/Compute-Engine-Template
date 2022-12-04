@@ -1,0 +1,6 @@
+[submodule "shared/Base-Engine-Library"]
+	path = shared/Base-Engine-Library
+	url = https://github.com/rust-multiplatform/Base-Engine-Library
+[submodule "shared/Compute-Engine-Library"]
+	path = shared/Compute-Engine-Library
+	url = https://github.com/rust-multiplatform/Compute-Engine-Library
