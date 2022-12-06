@@ -28,6 +28,15 @@ This project is dual licensed in Rust's fashion:
 For your own project you can chose whichever fits you better.
 For templates/examples we recommend to also dual-licensing.
 
+## Credits
+
+This project is loosely based on the [Vulkano.rs Guide](https://vulkano.rs/guide/).  
+Thank you very much for creating [Vulkano.rs](https://vulkano.rs) ❤️!
+
+[Crates](https://crates.io/crates/vulkano)  
+[Website](https://vulkano.rs/)  
+[GitHub](https://github.com/vulkano-rs/vulkano)  
+
 ## Project layout
 
 | Folder                                 | Description                                                                                                                         | GitHub Actions                                                                                                                                                                                                                  | Coverage                                                                                                                                                                                      |
