@@ -41,7 +41,12 @@ jobs:
           echo "> Fetching ..."
           git fetch --all
 
+          echo "> Creating merge branch"
+          git checkout -b upstream || true
+          git switch upstream
+
           echo "> Merging ..."
+<<<<<<< HEAD
           git switch main 
           git merge -s ours upstream/main
 
@@ -49,3 +54,11 @@ jobs:
           git add --all || true
           git commit -m "Upstream merge ($(date +%d.%m.%Y_%H:%M:%S))" || true
           git push origin main
+=======
+          git merge upstream/main origin/upstream || true
+
+          echo "> Pushing ..."
+          git add . || true
+          git commit -m "Upstream merge ($(date +%d.%m.%Y_%H:%M:%S))" || true
+          git push origin upstream
+>>>>>>> origin/upstream
